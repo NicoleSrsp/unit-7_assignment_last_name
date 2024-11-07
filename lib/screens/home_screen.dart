@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
     
     if (response.statusCode == 200) {
       final Map<String, dynamic> jsonData = json.decode(response.body);
-      return jsonData['meals']; // Access the list of meals in the 'meals' key
+      return jsonData['meals']; 
     } else {
       throw Exception('Failed to load data');
     }
